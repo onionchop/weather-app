@@ -19,27 +19,42 @@
         <h1 class="main-title">Weather Dashboard</h1>
     </header>
 
-<main>
+<aside>
     <section class="left-container">
         <div class="search-container p-2">
             <h2 class="p-2">Search for A City</h2>
             <input type="text" id="city-in" placeholder="Brooklyn, NY" />
             <button id="search-btn">Search</button>
         </div>
-            <div
-                class="recent">
+    </section>
+</aside>
+<!-- current city -->
+
+            <div class="recent container-fluid d-flex flex-column align-items-baseline justify-content-start">
+            <div class=" w-auto mr-4 pr-5 mw-100 border rounded">
+
+    <section class="current container">
+            <h3 id="city"></h3>
+            <p class="py-4"><span id="date"></span></p>
+            <p class="py-3">Temperature:<span id="temp"></span></p>
+            <p class="py-3">Wind: <span id="wind"></span></p>
+            <p class="py-3">Humidity: <span id="humid"></span></p>
+    </section>
             </div>
-    </section>
+<!-- 5 Forecast -->
 
-    <section 
-        class="current">
-    </section>
-
+    <div class="row flex-nowrap">
     <section
-        class="forecast">
-    </section>
+        class="forecast col-sm-9 col-md-10">
+        <h3>5 Day Forecast:</h3>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+        </section>
+    </div>
 
-</main>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
