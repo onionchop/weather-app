@@ -1,0 +1,10 @@
+body {
+    font-family: 'Inconsolata', monospace;
+}
+
+header {
+    background-image: linear-gradient(to bottom right,blue,black) ;
+    color: aliceblue;
+
+}
+

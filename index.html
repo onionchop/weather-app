@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="assets/css/style.css">
@@ -12,14 +15,14 @@
 
 
 <body>
-    <header>
-        <h1>Weather Dashboard</h1>
+    <header class="text-center p-3">
+        <h1 class="main-title">Weather Dashboard</h1>
     </header>
 
 <main>
-    <section>
-        <div>
-            <h2>Search for A City</h2>
+    <section class="left-container">
+        <div class="search-container p-2">
+            <h2 class="p-2">Search for A City</h2>
             <input type="text" id="city-in" placeholder="Brooklyn, NY" />
             <button id="search-btn">Search</button>
         </div>
@@ -38,6 +41,10 @@
 
 </main>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
 <script src="assets/js/script.js"></script>
 
 </body>
